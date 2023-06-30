@@ -6,3 +6,9 @@ body {
 .text-justify {
 	text-align: justify;
 }
+
+.fondo-hole {
+	background-image: url("assets/hole.jpg") no-repeat;
+	background-size: cover;
+	display: block;
+}
