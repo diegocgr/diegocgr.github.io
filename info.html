@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>POSTRAGEDY</title>
+		<link rel="icon" href="assets/logo.png">
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<!-- Animaciones -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	</head>
+	<body>
+
+		<div id="container-header" class="container">
+			<div class="row">
+				<div class="col">
+
+					<nav class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="index.html">
+								<img src="assets/logo.png" alt="Bootstrap" width="30" height="30">
+							</a>
+							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+								<div class="navbar-nav mx-auto">
+									<a class="nav-link" href="index.html">Home</a>
+									<a class="nav-link active" aria-current="page" href="#">Sobre mí</a>
+									<!-- <a class="nav-link disabled">Disabled</a> -->
+								</div>
+							</div>
+						  </div>
+						</div>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="container-principal" class="container-fluid">
+			<div class="row mx-auto">
+				<div class="col"></div>
+					<h1 class="display-3 text-center">Hola..!</h1>
+
+					<p class="text-center">
+						Esto es TEST.
+					</p>
+				</div>
+			</div>
+
+			<div class="row mx-auto text-center">
+				<div class="col ">
+					<img id="img_hole" src="assets/hole-2.png" class="img-fluid" alt="...">
+					<img id="img_post_hole" src="assets/post-hole-2.jpg" class="img-fluid img_oculta mx-auto" alt="...">
+					<img id="img_no_hole" src="assets/silent-hill-3.jpeg" class="img-fluid img_oculta mx-auto" alt="...">
+				</div>
+			</div>
+
+			<div class="row mt-3 mb-3 mx-auto text-center">
+				<div class="col-6">
+					<button id="button_hole_yes" type="button" class="btn btn-outline-success w-100" onclick="holeYes()">Yes</button>
+				</div>
+
+				<div class="col-6">
+					<button id="button_hole_no" type="button" class="btn btn-outline-danger w-100" onclick="holeNo()">No</button>
+				</div>
+			</div>
+
+            <div id="row_hole_yes" class="row mt-3 mx-auto">
+                <div class="col">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati esse molestias similique! Numquam aliquid facere ut nihil ipsam qui exercitationem quam vitae. Omnis, voluptates! Veritatis sunt repellat itaque reiciendis!
+                    </p>
+                </div>
+            </div>
+
+            <div id="row_hole_no" class="row mt-3 mx-auto">
+                <div class="col">
+                    <p>
+						Ni siquiera consigo que alguien me oiga cuando grito...
+                    </p>
+                </div>
+            </div>
+		</div>
+
+		<!-- Script -->
+		<script src="script_info.js"></script>
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+		<!-- Bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	</body>
+</html>
