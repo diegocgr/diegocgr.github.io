@@ -1,12 +1,298 @@
 body {
-	background-color: #f7e8d3 !important;
+	/* background-color: #f7e8d3 !important; */
 	font-family: 'Montserrat' !important;
+    /* background-color: #000000 !important; */
+    /* background-image: linear-gradient(315deg, #000000 0%, #5e5368 74%) !important; */
+    /* color: white !important; */
+    /* background-size: contain !important; */
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed !important;
+    background-color: #b5c327 !important;
+    background-image: linear-gradient(315deg, #b5c327 0%, #ffc907 74%) !important;
 }
+
+html {
+    scroll-behavior: auto !important;
+}
+
+/* nav, div, button, span, p, figcaption, a, h1, cite, footer {
+    color: white !important; 
+} */
 
 .div_oculto {
     display: none !important;
 }
 
+.div_oculto_otro {
+    display: none !important;
+}
+
 .img_oculta {
     display: none;
+}
+
+.p_justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#div_hole_father {
+    /* color: green; */
+    position: relative;
+    /* border: 1px solid green; */
+    background: url(assets/hole-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 75%; /* (img-height / img-width * width) */
+    border-radius: 10px;
+}
+
+#div_hole_yes {
+    /* background-color: red; */
+    top: 82.5%;
+    left: 31.5%;
+    /* display: inline-block; */
+    position: absolute;
+    width: 15%;
+    height: 10%;
+}
+
+#button_hole_yes {
+    /* width: 50px;
+    height: 30px; */
+    width: 100%;
+    height: 100%;
+}
+
+#button_hole_yes:hover {
+    background: transparent;
+}
+
+#div_hole_no {
+    top: 82.5%;
+    left: 53.5%;
+    position: absolute;
+    width: 15%;
+    height: 10%;
+}
+
+#button_hole_no {
+    width: 100%;
+    height: 100%;
+}
+
+#button_hole_no:hover {
+    background: transparent;
+}
+
+.row_hole_yes {
+    color: black;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+#btn_subir {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c327b5; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+  }
+  
+#btn_subir:hover {
+    background-color: #61135a; /* Add a dark-grey background on hover */
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.color-change-5x {
+	animation: color-change-5x 5.4s linear infinite alternate both;
+    height:300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+}
+
+@keyframes color-change-5x {
+    0% {
+        background: #19dcea;
+        border: 5px #b22cff;
+    }
+    25% {
+        background: #b22cff;
+        border: 5px #ea2222;
+    }
+    50% {
+        background: #ea2222;
+        border: 5px #ea2222;
+    }
+    75% {
+        background: #f5be10;
+        border: 5px #3bd80d;
+    }
+    100% {
+        background: #3bd80d;
+        border: 5px #19dcea;
+    }
+}
+
+.blink-1 {
+	animation: blink-1 0.6s infinite both;
+    font-size: 35px !important;
+}
+
+@keyframes blink-1 {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.ping {
+	animation: ping 1.5s ease-in-out infinite both;
+    font-size: 35px !important;
+}
+
+@keyframes ping {
+    0% {
+      transform: scale(0.2);
+      opacity: 0.8;
+    }
+    80% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(2.2);
+      opacity: 0;
+    }
+}
+
+/* -------------------------------------------------------------------------------- */
+  
+.oculto {
+    display: none;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image2 {
+    position: absolute;
+    top: 0px;
+    /* left: 0px; */
+    width: 50%;
+    right: 12px;
+}
+
+.image2_alt {
+    position: absolute;
+    top: 125px;
+    /* left: 0px; */
+    width: 50%;
+    right: 20px;
+    color: white !important;
+    font-family: 'Indie Flower', cursive !important;
+    font-size: 20px !important;
+}
+
+.image2_altv2 {
+    position: absolute;
+    top: 75px;
+    /* left: 0px; */
+    width: 10%;
+    right: 160px;
+}
+
+.image2_altv3 {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100%;
+    color: #F9F6EE;
+}
+
+.image2_altv4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 3.2%;
+    width: 93.6%;
+    background-color: black;
+    color: #F9F6EE;
+}
+
+#emoji_1{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.emoji_2{
+    width: 30px;
+    height: 30px;
+}
+
+#div_flores {
+    height: 75px;
+}
+
+#flores {
+    height: 100%;
+    width: auto;
+}
+
+#video_blame {
+    width: 100%;
+}
+
+#naga {
+    height: 200px;
+    width: auto;
+}
+
+#perro {
+    height: 200px;
+    width: auto;
+}
+
+#gorra {
+    height: 200px;
+    width: auto;
+}
+
+#xfiles {
+    height: 200px;
+    width: auto;
+}
+
+#video_check {
+    width: 100%;
 }
